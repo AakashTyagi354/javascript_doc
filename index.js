@@ -101,6 +101,108 @@ const sum = () => {
 }
 console.log(sum());
 
+// ARRAYS
+// array is a special variable, which can hold more than one value 
+// creating an array
+// Array index start from 0
+// arrays are objects 
+const myFriends = ["Aakash","Hardik","Aryan","Tyagi"];
+console.log(typeof(myFriends));
+// or
+const carTwo = new Array("saab","volvo","BMW");
+
+// we can sort the array by method of Array.sort()
+const my_Number = [3,4,1,2];
+console.log(my_Number.sort());
+
+//length of an array
+console.log(my_Number.length);
+
+// looping the array element
+// using for loop
+for(let i = 0;i<my_Number.length;i++){
+    console.log(my_Number[i]);
+}
+// using for in loop {return only index of element}
+for(let elements in my_Number){
+    console.log(elements);
+}
+// using for of loop {return the value not the index}
+for(let element of my_Number){
+    console.log(element);
+}
+//for each loop
+my_Number.forEach(function(element,index,array){
+         console.log(element);
+});
+
+// Adding array element 
+// push()
+const fruits = ["banana","orange","apple"];
+fruits.push("lemon");
+for(let element of fruits){
+    console.log(element);
+}
+
+// Array Methods 
+// pop() {popping the item out of an array }
+fruits.pop();
+for(let element of fruits){
+    console.log(element);
+}
+// shift() is same as pop() the difference is it removes first element of an array 
+fruits.shift();
+for(let element of fruits){
+    console.log(element);
+}
+
+// unshift() add an element at the beginning 
+fruits.unshift("mango");
+
+// Splicing an array {used to add new item in an array }
+fruits.splice(1,0,"lem");
+for(let element of fruits){
+    console.log(element);
+}
+// we can also use splicing for removing elements from array
+fruits.splice(0,1);
+for(let element of fruits){
+    console.log(element);
+}
+// concatenating arrays 
+const myFri_1 = ["he","she"];
+const myFri_2 = ["they","them"];
+console.log(myFri_1.concat(myFri_2));
+
+// reversing an array 
+// reverse()
+const my_Number_2 = [1,23,34,56];
+my_Number_2.reverse();
+for(let element of my_Number_2){
+    console.log(element);
+}
+
+// array.map()
+// the map() method create a new array by performing a function on each array element 
+
+const number_1 = [1,2,3,4];
+const number_2 = number_1.map(myFun);
+function myFun(value){
+    return value*2;
+}
+
+// array filter();
+// This method creates a new array with the array element which passes a test.
+
+const number_3 = [9,8,7,6,5,4];
+const over5 = number_3.filter(myFunction);
+function myFunction(value){
+    return value>5;
+}
+
+
+
+
 
 
 
