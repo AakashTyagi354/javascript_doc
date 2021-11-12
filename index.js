@@ -200,6 +200,124 @@ function myFunction(value){
     return value>5;
 }
 
+// Array.every() method 
+// it check if all array values pass a text 
+
+// Array.indexOf() 
+// search an array for an element value and returns its postion 
+
+// Array.lastIndexOf() returns the last occurence of the searched element 
+
+// Array.includes()
+// checks if an element is present in an array or not 
+
+// Array.find()
+// returns the value of first array element that passes a test 
+
+
+
+
+// STRING 
+// used for storing and manipulating text
+
+let text = "Aakash Tyagi"
+console.log(text);
+// we can use double or single quotes
+// String length
+console.log(text.length); // also counts the space in between 
+// Escape character
+let text_2 = 'we are going to "play" games ';
+console.log(text_2);
+// String as a Objects 
+let yt = new String("John");
+console.log(yt);
+
+// String Method 
+// 1- slice(start, end)
+let str = "hello world";
+let part = str.slice(0,5); // we the value is -ve then postion is counted from the end of the string 
+console.log(part); 
+// 2- substring()
+// can not accept negative indexes 
+let part_2 = str.substring(0,5);
+console.log(part_2);
+// 3- substr()
+// the second parameter specifics the length of the extracted part 
+let part_3 = str.substr(0,5);
+console.log(part_3);
+// 4- replace()
+let part_4 = str.replace("hello","world");
+console.log(part_4); // replace only the first match 
+// 5- toUpperCase
+// 6- toLowerCase
+// 7- concat()
+// 8 - String.trim()
+// removes the white space from both the sides 
+console.log(str.trim());
+
+// Extracting String Character
+// 1- charAt(posiion)
+console.log(str.charAt(0));
+// 2- charCodeAt()
+// return UTF-16 code of a character.
+console.log(str.charCodeAt(0));
+
+// converting string to an array
+// split method
+console.log(str.split(" "));
+
+// String Search
+// 1- indexOf()  returns the index of first occurrence 
+console.log(str.indexOf("world"));
+// 2- lastIndexOf()
+// returns the index of last occurrence 
+console.log(str.lastIndexOf("world"));
+// 3- search() method
+console.log(str.search("hello"));
+// 4- includes() method
+// returns true if string containes the specified value
+console.log(str.includes("hello"));
+// 5- startsWith()
+// returns true if a string begins with a specified value 
+console.log(str.startsWith("h"));
+// 6- endsWith()
+// returns true if a string ends with a specified value 
+console.log(str.endsWith("d"));
+
+
+
+
+
+
+
+
+// DATE 
+// JavaScript will use the browser's time zone and display a date as a full text string 
+// Creating a date objects 
+
+// 1- new Date()
+// create a new date object with the current date and time 
+ const d = new Date();
+ console.log(d.toString());
+
+ // 2- new Date(year, month,....)
+ // create a date with specified date and time 
+ const d_1 = new Date(2018,11,24,10,33,30,0);
+ console.log(d_1.toString()); // jan-0 and Dec-11
+
+ // 3- new Date(dateString)
+ // creating a new date object from a date string 
+ const d_2 = new Date("October 12,2014 11:13:00");
+ console.log(d_2);
+
+ // 4- new Date(millisecond)
+ // creates a new date object as milliseconds
+ d.getTime();
+ console.log(d);
+d.getFullYear();
+console.log(d);
+
+
 
 
 
