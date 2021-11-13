@@ -1,0 +1,85 @@
+body{
+    background-image: url(./people-gd939a96b4_1920.jpg);
+    background-size: 100%;
+}
+img{
+    height: 3%;
+    width: 3%;
+
+}
+.logo{
+    height: 2%;
+    width: 2%;
+    padding-left: 10px;
+    padding-right: 5px;
+      
+}
+#f-logo{
+    height: 3.5%;
+    width: 3.5%;
+} 
+.nav-logo{
+    
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    margin-top: 20px;
+
+}
+.nav-bar{
+    margin-left: 15px;
+}
+  
+ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: violet;
+}
+li{
+    float: left;
+}
+li a{
+    
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+
+}
+li a:hover{
+    color: yellowgreen;
+}
+.con{
+    margin-top: 180px;
+    margin-left: 30px;
+}
+h1{
+    color: white;
+}
+#btn_1{
+    background-color: #FDDB27FF;
+    height: 60px;
+    width: 180px;
+    color: #101820FF;
+    border-style: solid;
+    border-color: white;
+   
+     
+    
+}
+#btn_2{
+    height: 60px;
+    width: 180px;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    margin-left: 5px;
+}
+p{
+   padding-bottom: 20px;
+   color: white;
+
+}

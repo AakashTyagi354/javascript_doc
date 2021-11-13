@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(./tree-gde74b2c80_1280.jpg);
+    /* background-size: cover; */
+    /* background-position: center ; */
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+
+}
+h1{
+    font-size: 4rem;
+    color: wheat;
+    margin-top: -10rem;
+     
+}
+.countdown-con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.big-text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+    font-weight: bold;
+
+}
+.contdown-ol {
+    text-align: center;
+}
+.contdown-ol span{
+    font-size: 1.5rem;
+}
+.form{
+    position: absolute;
+    left: 90px;
+     top: 200px;
+
+}
+
